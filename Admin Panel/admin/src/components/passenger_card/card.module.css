@@ -1,0 +1,66 @@
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--secondary);
+  margin-bottom: 0.1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  cursor: pointer;
+
+}
+ 
+.profile-container {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+.profile-img {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+}
+.detail-container {
+  width: 75%;
+  height: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+.title {
+  width: 100%;
+
+  font-size: var(--medium);
+  font-weight: 500;
+  color: var(--text);
+}
+.sub-detail-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub-text-container {
+  width: 22%;
+}
+.sub-text {
+  font-size: var(--small);
+  color: var(--text);
+}
+.span-sub-text {
+  font-size: var(--small);
+  color: gray;
+}
+.action-container {
+    box-sizing: border-box;
+  width: 15%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2em;
+}
+.switch{
+  color: var(--primary);
+}

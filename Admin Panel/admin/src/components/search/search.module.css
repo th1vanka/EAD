@@ -1,0 +1,21 @@
+.container {
+  box-sizing: border-box;
+
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  background-color: var(--secondary);
+  padding: 0.3em 0.7em 0.3em 0.7em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.search-field {
+  width: 15em;
+  font-size: var(--ex-small);
+  outline: none;
+  border: none;
+}
+::placeholder {
+  color: rgb(234, 132, 132);
+  
+}

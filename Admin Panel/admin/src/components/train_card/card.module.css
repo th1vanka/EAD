@@ -1,0 +1,56 @@
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--secondary);
+  margin-bottom: 0.1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  
+}
+.profile-container {
+  width: 8%;
+  display: flex;
+  justify-content: center;
+    align-items: center
+}
+
+.detail-container {
+  width: 71%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.title{
+  width: 20%;
+  font-size:var(--medium);
+  font-weight:600;
+}
+.prefix{
+  width: 25%;
+  font-size:var(--small);
+  color: var( --sub-text);
+}
+.sub-title{
+  width: 23%;
+  font-size:var(--small);
+  font-weight: 500;
+}
+.sub-title2{
+  width: 15%;
+  font-size:var(--small);
+  font-weight: 500;
+}
+ 
+
+.action-container {
+  box-sizing: border-box;
+  width: 15%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+  padding-right: 2em;
+}

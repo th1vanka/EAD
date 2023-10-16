@@ -1,0 +1,10 @@
+:root {
+  --primary: red;
+  --secondary: rgb(255, 255, 255);
+  --text:black;
+  --unselected-text:rgb(39, 39, 39);
+  --selected-text:rgb(0, 0, 0);
+  --background:#edebf1;
+  --button:rgb(255, 66, 66);
+  --sub-text:gray ;
+}
