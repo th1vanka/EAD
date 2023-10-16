@@ -5,7 +5,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import Switch from "../switch/switch";
 
-function TrainCard({ active }) {
+function TrainCard({ active ,name,no,start,end}) {
   const editHandler = () => {
     console.log("switch");
   };
@@ -19,19 +19,20 @@ function TrainCard({ active }) {
         <TrainIcon sx={{ fontSize: 30, color: "red" }} />
       </div>
       <div className={styles["detail-container"]}>
-        <div className={styles["title"]}>Ruhunu Kumari</div>
+        <div className={styles["title"]}>{name}</div>
         <div className={styles["sub-title2"]}>
-          <span className={styles["prefix"]}>Ref: </span>125
+          <span className={styles["prefix"]}>No: </span>
+          {no}
         </div>
         <div className={styles["sub-title"]}>
-          <span className={styles["prefix"]}>Start: </span>Colombo
+          <span className={styles["prefix"]}>Start: </span>{start}
         </div>
         <div className={styles["sub-title"]}>
-          <span className={styles["prefix"]}>End: </span>Anuradhapura
+          <span className={styles["prefix"]}>End: </span>{end}
         </div>
         <div className={styles["sub-title2"]}>
           <span className={styles["prefix"]}>Status: </span>
-          Running
+          {active===true ? "Running" : "Stopped"}
         </div>
       </div>
       <div className={styles["action-container"]}>

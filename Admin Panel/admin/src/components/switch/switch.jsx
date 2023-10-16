@@ -15,13 +15,13 @@ function Switch({id,active,onSwitch}) {
   return (
     <div
       className={styles["container"]}
-      id={!isActive ? styles.active : styles.inactive}
+      id={isActive ? styles.active : styles.inactive}
       onClick={switchHandler}
     >
       {isActive ? (
-        <div className={styles["switch-left"]} />
-      ) : (
         <div className={styles["switch-right"]} />
+        ) : (
+        <div className={styles["switch-left"]} />
       )}
     </div>
   );
