@@ -1,0 +1,24 @@
+.container{
+    box-sizing: border-box;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.label{
+    font-size: var(--small);
+    font-weight: 500;
+    color: var(--text);
+}
+.input{
+    padding: 0.5em;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--sub-text);
+}
+::placeholder{
+    color: var(--sub-text)
+}
+.star{
+    color:var(--primary)
+}

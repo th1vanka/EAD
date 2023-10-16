@@ -1,0 +1,103 @@
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--secondary);
+  margin-top: 0.1em;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  z-index: 105;
+}
+ 
+
+.profile-container {
+  width: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.detail-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+.title-container {
+  width: 100%;
+}
+.title {
+  width: 40%;
+  font-size: var(--medium);
+  font-weight: 600;
+}
+.sub-titles-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.prefix {
+  width: 25%;
+  font-size: var(--small);
+  color: var(--sub-text);
+}
+.sub-title {
+  width: 25%;
+  font-size: var(--small);
+  font-weight: 500;
+}
+.action-container {
+  box-sizing: border-box;
+  width: 15%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+  padding-right: 2em;
+}
+
+.sub-container {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--secondary);
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  position: relative;
+  z-index: 10;
+}
+#container_active{
+   display: flex;
+  animation: subContainer 1s forwards;
+   
+}
+@keyframes subContainer {
+  from {
+    top:-2em
+  }
+  to {
+    top:0em
+  }
+}
+.profile-img {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+}
+.user-details-container{
+  box-sizing: border-box;
+  width: 88.5%;
+  display: flex; 
+  justify-content:space-between;
+  padding-right: 0.8em;  
+}
+.sub-title2 {
+  width: 18%;
+  font-size: var(--small);
+  font-weight: 500;
+}

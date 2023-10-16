@@ -1,0 +1,27 @@
+.container {
+  width: 2.5em;
+  height: 1.2em;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#active{
+  background-color: rgb(249, 201, 201);
+  
+}
+#inactive{
+  background-color: rgb(219, 219, 219);
+}
+.switch-left {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(143, 143, 143);
+  float: left;
+  border-radius: 50%;
+}
+.switch-right {
+  width: 50%;
+  height: 100%;
+  background-color: var(--primary);
+  float: right;
+  border-radius: 50%;
+}

@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+.logo-container {
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em; 
+}
+.logo-label{
+  font-size: var(--large);
+  font-weight: 500;
+}
+.logo-icon{
+  color: var(--primary);
+  rotate: 30deg;
+}
+.links-container {
+  width: 100%;
+  margin-top: 2em;
+}
+.link-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  text-decoration: none;
+  padding: 0 0 0 2em;
+}
+.icons {
+  color: var(--primary);
+}
+.labels {
+  color: var(--unselected-text);
+  cursor: pointer;
+}
+.active {
+  border-right: 3.5px solid var(--primary);
+  background-color: var(--background);
+  color: var(--selected-text);
+  font-weight: 600;
+}
