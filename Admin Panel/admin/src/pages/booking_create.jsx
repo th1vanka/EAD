@@ -3,7 +3,11 @@ import styles from "../styles/booking_create.module.css";
 import Button from "../components/button/button";
 import Input from "../components/input_field/input";
 import Select from "../components/select_box/select";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
 function BookingCreate() {
+  const navigate = useNavigate();
   const [passengerName, setPassengerName] = React.useState("");
   const [nic, setNiC] = React.useState("");
   const [contact, setContact] = React.useState("");
@@ -13,8 +17,28 @@ function BookingCreate() {
   const [date, setDate] = React.useState("");
 
   const submitHandler = () => {
-    console.log(trainClass);
+    const data = {
+      RefId: "H0012",
+      PassengerName: passengerName,
+      reservationDate: date,
+      noPassengers: seat,
+      trainName: train,
+      passengerNIC: nic,
+      mobileNumber: contact,
+      trainclass: trainClass,
+    };
+
+    axios
+      .post("http://localhost:5053/api/reservations", data)
+      .then((res) => {
+        navigate(-1);
+      })
+      .catch((err) => {
+        alert(err.message);
+      });
   };
+
+ 
 
   return (
     <div className={styles["container"]}>
@@ -38,7 +62,7 @@ function BookingCreate() {
         />
         <Input
           label="Passenger's Contact Number."
-          type="tel"
+          type="text"
           placeholder="Eg:- 0718720024"
           required={true}
           onChangeText={(e) => setContact(e.target.value)}
@@ -80,7 +104,15 @@ function BookingCreate() {
         />
         <div className={styles["amount-container"]}>
           <label className={styles["amount-label"]}>Total Amount</label>
-          <label className={styles["amount"]}>Rs 2050.00</label>
+          <label className={styles["amount"]}>
+            Rs{" "}
+            {trainClass === "1"
+              ? seat * 50
+              : trainClass === "2"
+              ? seat * 30
+              : trainClass === "2" && seat * 20}
+            .00
+          </label>
         </div>
         <div className={styles["action-container"]}>
           <Button text="Confirm" clickHandler={submitHandler} />
