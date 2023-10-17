@@ -34,6 +34,7 @@ function Trains() {
       <div className={styles["card-container"]}>
         {trains.map((item, index) => (
           <TrainCard
+            id={item.id}
             active={item.isActive}
             name={item.trainName}
             no={item.refNo}

@@ -13,11 +13,13 @@ import TrainRegistration from '../pages/train_registration';
 import ScheduleRegistration from '../pages/schedule_registration';
 import BookingCreate from '../pages/booking_create';
 import CanceledBooking from '../pages/canceled_booking';
+import Login from '../pages/login';
 
 function PageRoutes() {
   return (
     <Router>
       <Routes>
+          <Route path="/login" element={<Login />} />
         <Route path="/" element={<App />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/passengers" element={<Passenger />} />

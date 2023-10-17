@@ -31,14 +31,13 @@ function BookingCreate() {
     axios
       .post("http://localhost:5053/api/reservations", data)
       .then((res) => {
+        alert("Done");
         navigate(-1);
       })
       .catch((err) => {
         alert(err.message);
       });
   };
-
- 
 
   return (
     <div className={styles["container"]}>
